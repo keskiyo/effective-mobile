@@ -87,12 +87,15 @@ Dependency `require_permission(resource_name, action)` работает так:
 POST   /api/v1/auth/register
 POST   /api/v1/auth/login
 POST   /api/v1/auth/logout
+
 GET    /api/v1/users/me
 PUT    /api/v1/users/me
 DELETE /api/v1/users/me
+
 GET    /api/v1/admin/users
 PATCH  /api/v1/admin/users/{user_id}
 DELETE /api/v1/admin/users/{user_id}
+
 GET    /api/v1/projects
 POST   /api/v1/projects
 DELETE /api/v1/projects/{project_id}
@@ -100,4 +103,4 @@ DELETE /api/v1/projects/{project_id}
 
 ## Проверка таблиц
 
-Initial Alembic migration создает только таблицу `users` и индекс email. Таблицы `projects`, `roles`, `permissions`, `user_roles`, `role_permissions` не создаются.
+Initial Alembic migration создает только таблицу `users` и индекс email.
